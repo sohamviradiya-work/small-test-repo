@@ -42,7 +42,7 @@ public class BasicStatistics {
 
     public static double percentile25(double[] numbers) {
         Arrays.sort(numbers);
-        int index = (int) Math.ceil(0.25 * numbers.length) - 1;
+        int index = (int) Math.ceil(0.5 * numbers.length) - 1;
         return numbers[index];
     }
 
