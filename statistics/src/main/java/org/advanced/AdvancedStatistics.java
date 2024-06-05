@@ -43,7 +43,7 @@ public class AdvancedStatistics {
 
     public static double correlation(double[] numbers1, double[] numbers2) {
         double covariance = covariance(numbers1, numbers2);
-        if(covariance==0) return 0;
+        if(covariance==0) return 1;
         double stdDev1 = Math.sqrt(variance(numbers1));
         double stdDev2 = Math.sqrt(variance(numbers2));
 
