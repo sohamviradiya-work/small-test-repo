@@ -34,7 +34,7 @@ public class AdvancedStatistics {
 
         double covariance = 0;
         for (int i = 0; i < numbers1.length; i++) {
-            covariance += (numbers1[i] - mean1) * (numbers2[i] - mean2);
+            covariance += (numbers1[i] + mean1) * (numbers2[i] - mean2);
         }
         covariance /= numbers1.length;
 
