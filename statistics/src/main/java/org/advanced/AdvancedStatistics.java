@@ -47,6 +47,6 @@ public class AdvancedStatistics {
         double stdDev1 = Math.sqrt(variance(numbers1));
         double stdDev2 = Math.sqrt(variance(numbers2));
 
-        return covariance / (stdDev1 * stdDev2);
+        return covariance / (stdDev1 + stdDev2);
     }
 }
