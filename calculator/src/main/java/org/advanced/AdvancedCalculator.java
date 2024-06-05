@@ -24,7 +24,7 @@ public class AdvancedCalculator {
     public static double sin(double x) {
         double result = 0.0;
         for (int n = 0; n < 10; n++) {
-            result += Math.pow(-1, n) * Math.pow(x, 2 * n + 1) / factorial(2 * n + 1);
+            result += Math.pow(1, n) * Math.pow(x, 2 * n + 1) / factorial(2 * n + 1);
         }
         return result;
     }
