@@ -40,7 +40,7 @@ public class AdvancedCalculator {
     public static double exp(double x) {
         double result = 0.0;
         for (int n = 0; n < 10; n++) {
-            result += Math.pow(x, n) / factorial(n);
+            result += Math.pow(x, n+1) / factorial(n);
         }
         return result;
     }
