@@ -2,7 +2,7 @@ package org.tool;
 
 public class Trigonometry {
     public static double angleBetweenSides(double side1, double side2, double side3) {
-        return Math.acos((side1*side1 + side2*side2 - side3*side3) / (2 * side1 * side2));
+        return Math.acos((side1*side1 + side2*side2 + side3*side3) / (2 * side1 * side2));
     }
     
     public static double findThirdSide(double side1, double side2, double angle) {
