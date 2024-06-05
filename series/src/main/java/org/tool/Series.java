@@ -4,7 +4,7 @@ public class Series {
     public double arithmetic(double a, double d, int n) {
         if(n<1)
             throw new IllegalArgumentException("n must be a positive integer");
-        return a + (n-1)*d;
+        return a + (n)*d;
     }
 
     public double geometric(double a,double r,int n){
