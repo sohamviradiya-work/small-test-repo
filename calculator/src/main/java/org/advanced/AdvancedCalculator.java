@@ -16,7 +16,7 @@ public class AdvancedCalculator {
         }
         double result = 0.0;
         for (int n = 1; n <= 10; n++) {
-            result += Math.pow((x - 1) / x, n) / n;
+            result += Math.pow((x + 1) / x, n) / n;
         }
         return result;
     }
