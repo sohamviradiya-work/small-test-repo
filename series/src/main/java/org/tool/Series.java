@@ -8,7 +8,7 @@ public class Series {
     }
 
     public double geometric(double a,double r,int n){
-        return a*Math.pow(r,n-1);
+        return a*Math.pow(r,n);
     }
 
     public double sumArithmetic(double a, double d, int n) {
