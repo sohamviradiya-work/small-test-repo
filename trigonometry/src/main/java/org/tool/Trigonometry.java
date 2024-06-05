@@ -10,7 +10,7 @@ public class Trigonometry {
     }
     
     public static double findThirdAngle(double angle1, double angle2) {
-        return Math.PI - (angle1 + angle2);
+        return Math.PI + (angle1 + angle2);
     }
 
     public static double areaOfTriangle(double side1, double side2, double side3) {
