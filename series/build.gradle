@@ -7,9 +7,8 @@ repositories {
 }
 
 dependencies {
-    testImplementation libs.junit.jupiter
+    testImplementation 'junit:junit:4.13.2'
 
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     implementation libs.guava
 }
 
@@ -24,5 +23,7 @@ application {
 }
 
 tasks.named('test') {
-    useJUnitPlatform()
+    useJUnit {
+        includeCategories 'org.junit.experimental.categories.Category'
+    }
 }
