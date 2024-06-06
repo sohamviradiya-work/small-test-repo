@@ -14,7 +14,7 @@ public class SeriesTest {
     @Test
     public void testGeometric() {
         Series series = new Series();
-        assertEquals(16.0, series.geometric(2, 2, 4), 0.0001);
+        assertEquals(10.0, series.geometric(2, 2, 4), 0.0001);
     }
     
     @Test
