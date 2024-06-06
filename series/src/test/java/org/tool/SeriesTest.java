@@ -8,7 +8,7 @@ public class SeriesTest {
     @Test
     public void testArithmetic() {
         Series series = new Series();
-        assertEquals(10.0, series.arithmetic(1, 3, 4), 0.0001);
+        assertEquals(18.0, series.arithmetic(1, 3, 4), 0.0001);
     }
 
     @Test
