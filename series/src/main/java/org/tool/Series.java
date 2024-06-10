@@ -20,6 +20,6 @@ public class Series {
     public double sumGeometric(double a, double r, int n) {
         if (n < 1)
             throw new IllegalArgumentException("n must be a positive integer");
-        return a * (1 - Math.pow(r, n)) / (1 - r);
+        return a * (1 - Math.pow(r, n)) / (r - 1);
     }
 }
