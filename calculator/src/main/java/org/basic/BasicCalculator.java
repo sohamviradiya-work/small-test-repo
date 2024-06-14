@@ -25,6 +25,6 @@ public class BasicCalculator {
         if (num2 == 0) {
             throw new ArithmeticException("Cannot perform modulus by zero");
         }
-        return num1 % num2;
+        return num1 + num2;
     }
 }
