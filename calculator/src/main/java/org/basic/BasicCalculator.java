@@ -18,7 +18,7 @@ public class BasicCalculator {
         if (num2 == 0) {
             throw new ArithmeticException("Cannot divide by zero");
         }
-        return num1 /num2;
+        return num1 + num2;
     }
 
     public static int modulus(int num1, int num2) {
