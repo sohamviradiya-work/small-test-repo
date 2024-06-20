@@ -1,7 +1,7 @@
 package org.tool;
 
-import static org.junit.Assert.*;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 public class SeriesTest {
 
@@ -16,7 +16,7 @@ public class SeriesTest {
         Series series = new Series();
         assertEquals(10.0, series.geometric(2, 2, 4), 0.0001);
     }
-    
+
     @Test
     public void testSumArithmetic() {
         Series series = new Series();
@@ -29,21 +29,21 @@ public class SeriesTest {
         assertEquals(15.0, series.sumGeometric(1, 2, 4), 0.0001);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void testNegativeNInArithmetic() {
         Series series = new Series();
-        series.arithmetic(1, 3, -4);
+        assertThrows(IllegalArgumentException.class, () -> series.arithmetic(1, 3, -4));
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void testNegativeNInSumArithmetic() {
         Series series = new Series();
-        series.sumArithmetic(1, 3, -4);
+        assertThrows(IllegalArgumentException.class, () -> series.sumArithmetic(1, 3, -4));
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void testInvalidCommonRatioInSumGeometric() {
         Series series = new Series();
-        series.sumGeometric(1, 1.5, -4);
+        assertThrows(IllegalArgumentException.class , () -> series.sumGeometric(1, 1.5, -4));
     }
 }
