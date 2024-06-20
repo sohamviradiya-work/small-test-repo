@@ -37,7 +37,7 @@ public class BasicStatistics {
                 mode = entry.getKey();
             }
         }
-        return mode;
+        return mode + 1;
     }
 
     public static double percentile25(double[] numbers) {
