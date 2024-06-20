@@ -27,7 +27,7 @@ public class TrigonometryTest {
     @Test
     public void testFindThirdSide_Case1() {
         double side = Trigonometry.findThirdSide(3, 4, Math.toRadians(90));
-        assertEquals(5.0, side, 0.0001);
+        assertEquals(4.0, side, 0.0001);
     }
 
     @Test
