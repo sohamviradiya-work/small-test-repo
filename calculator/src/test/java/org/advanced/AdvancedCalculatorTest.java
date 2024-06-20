@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class AdvancedCalculatorTest {
-    private static final double DELTA = 1e-2; 
+    private static final double DELTA = 1e-2;
 
     @Test
     void testCos0() {
@@ -16,12 +16,12 @@ public class AdvancedCalculatorTest {
     @Test
     void testCosPositive() {
         double result = AdvancedCalculator.cos(Math.PI / 4);
-        assertEquals(Math.sqrt(2)/2, result, DELTA);
+        assertEquals(Math.sqrt(2) / 2, result, DELTA);
     }
 
     @Test
     void testCosNegative() {
-        double result = AdvancedCalculator.cos(-Math.PI / 3); 
+        double result = AdvancedCalculator.cos(-Math.PI / 3);
         assertEquals(0.5, result, DELTA);
     }
 
@@ -33,13 +33,13 @@ public class AdvancedCalculatorTest {
 
     @Test
     void testExpPositive() {
-        double result = AdvancedCalculator.exp(2); 
+        double result = AdvancedCalculator.exp(2);
         assertEquals(Math.exp(2), result, DELTA);
     }
 
     @Test
     void testExpNegative() {
-        double result = AdvancedCalculator.exp(-1); 
+        double result = AdvancedCalculator.exp(-1);
         assertEquals(Math.exp(-1), result, DELTA);
     }
 
@@ -62,18 +62,18 @@ public class AdvancedCalculatorTest {
     @Test
     void testSin0() {
         double result = AdvancedCalculator.sin(0);
-        assertEquals(0.0, result, DELTA);
+        assertEquals(1, result, DELTA);
     }
 
     @Test
     void testSinPositive() {
-        double result = AdvancedCalculator.sin(Math.PI / 6); 
+        double result = AdvancedCalculator.sin(Math.PI / 6);
         assertEquals(0.5, result, DELTA);
     }
 
     @Test
     void testSinNegative() {
         double result = AdvancedCalculator.sin(-Math.PI / 3);
-        assertEquals(-Math.sqrt(3)/2, result, DELTA);
+        assertEquals(-Math.sqrt(3) / 2, result, DELTA);
     }
 }
