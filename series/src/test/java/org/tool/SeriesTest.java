@@ -44,6 +44,6 @@ public class SeriesTest {
     @Test
     public void testInvalidCommonRatioInSumGeometric() {
         Series series = new Series();
-        assertThrows(IllegalArgumentException.class , () -> series.sumGeometric(1, 1.5, -4));
+        assertThrows(ArithmeticException.class , () -> series.sumGeometric(1, 1.5, -4));
     }
 }
