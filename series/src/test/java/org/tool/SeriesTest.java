@@ -32,7 +32,7 @@ public class SeriesTest {
     @Test
     public void testNegativeNInArithmetic() {
         Series series = new Series();
-        assertThrows(IllegalArgumentException.class, () -> series.arithmetic(1, 3, -4));
+        assertThrows(ArithmeticException.class, () -> series.arithmetic(1, 3, -4));
     }
 
     @Test
