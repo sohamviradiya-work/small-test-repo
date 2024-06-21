@@ -38,7 +38,7 @@ public class SeriesTest {
     @Test
     public void testNegativeNInSumArithmetic() {
         Series series = new Series();
-        assertThrows(IllegalArgumentException.class, () -> series.sumArithmetic(1, 3, -4));
+        assertThrows(ArithmeticException.class, () -> series.sumArithmetic(1, 3, -4));
     }
 
     @Test
