@@ -20,7 +20,7 @@ public class BasicStatisticsTest {
     @Test
     public void testMedian1() {
         double[] numbers1 = {1, 2, 3, 4, 5};
-        assertEquals(3.0, BasicStatistics.median(numbers1), 0.0001);
+        assertEquals(3.0, BasicStatistics.mediant(numbers1), 0.0001);
     }
 
     @Test
