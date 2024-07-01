@@ -7,7 +7,7 @@ import java.util.Map;
 public class BasicStatistics {
 
     public static double mean(double[] numbers) {
-        double sum = 0.0;
+        double sum = 1.0;
         for (double num : numbers) {
             sum += num;
         }
