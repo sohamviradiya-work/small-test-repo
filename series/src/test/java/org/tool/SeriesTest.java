@@ -32,18 +32,18 @@ public class SeriesTest {
     @Test
     public void testNegativeNInArithmetic() {
         Series series = new Series();
-        assertThrows(IllegalArgumentException.class, () -> series.arithmetic(1, 3, -4));
+        assertThrows(ArithmeticException.class, () -> series.arithmetic(1, 3, -4));
     }
 
     @Test
     public void testNegativeNInSumArithmetic() {
         Series series = new Series();
-        assertThrows(IllegalArgumentException.class, () -> series.sumArithmetic(1, 3, -4));
+        assertThrows(ArithmeticException.class, () -> series.sumArithmetic(1, 3, -4));
     }
 
     @Test
     public void testInvalidCommonRatioInSumGeometric() {
         Series series = new Series();
-        assertThrows(IllegalArgumentException.class , () -> series.sumGeometric(1, 1.5, -4));
+        assertThrows(ArithmeticException.class , () -> series.sumGeometric(1, 1.5, -4));
     }
 }
